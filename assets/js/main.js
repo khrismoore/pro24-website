@@ -154,20 +154,17 @@
     track.innerHTML += track.innerHTML;
   });
 
-  /* ---------- Call bar: hide while scrolling down, show on scroll up ---------- */
+  /* ---------- Call bar: appears after scrolling past the hero ---------- */
   var callbar = document.querySelector(".callbar");
   if (callbar) {
-    var lastY = window.scrollY;
-    window.addEventListener("scroll", function () {
-      var y = window.scrollY;
-      var nearBottom = window.innerHeight + y >= document.body.scrollHeight - 120;
-      if (nearBottom || y < 120 || y < lastY - 4) {
-        callbar.classList.remove("cb-hidden");
-      } else if (y > lastY + 4) {
-        callbar.classList.add("cb-hidden");
-      }
-      lastY = y;
-    }, { passive: true });
+    var heroEl = document.querySelector(".hero, .page-hero");
+    var updateBar = function () {
+      var threshold = heroEl ? heroEl.offsetHeight - 80 : 0;
+      callbar.classList.toggle("cb-on", window.scrollY > threshold);
+    };
+    window.addEventListener("scroll", updateBar, { passive: true });
+    window.addEventListener("resize", updateBar, { passive: true });
+    updateBar();
   }
 
   /* ---------- Footer year ---------- */

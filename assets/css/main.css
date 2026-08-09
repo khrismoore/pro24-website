@@ -697,9 +697,12 @@ a.contact-card:hover { border-color: rgba(236,27,31,0.5); transform: translateY(
   display: none;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  transition: transform 0.35s var(--ease-out), opacity 0.3s;
+  transform: translateY(140%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s var(--ease-out), opacity 0.35s;
 }
-.callbar.cb-hidden { transform: translateY(140%); opacity: 0; pointer-events: none; }
+.callbar.cb-on { transform: none; opacity: 1; pointer-events: auto; }
 .callbar a {
   display: flex; align-items: center; justify-content: center; gap: 9px;
   padding: 15px 10px;
