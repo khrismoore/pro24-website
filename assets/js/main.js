@@ -158,21 +158,15 @@
   var callbar = document.querySelector(".callbar");
   if (callbar) {
     var lastY = window.scrollY;
-    var ticking = false;
     window.addEventListener("scroll", function () {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(function () {
-        var y = window.scrollY;
-        var nearBottom = window.innerHeight + y >= document.body.scrollHeight - 120;
-        if (nearBottom || y < 120 || y < lastY - 4) {
-          callbar.classList.remove("cb-hidden");
-        } else if (y > lastY + 4) {
-          callbar.classList.add("cb-hidden");
-        }
-        lastY = y;
-        ticking = false;
-      });
+      var y = window.scrollY;
+      var nearBottom = window.innerHeight + y >= document.body.scrollHeight - 120;
+      if (nearBottom || y < 120 || y < lastY - 4) {
+        callbar.classList.remove("cb-hidden");
+      } else if (y > lastY + 4) {
+        callbar.classList.add("cb-hidden");
+      }
+      lastY = y;
     }, { passive: true });
   }
 
