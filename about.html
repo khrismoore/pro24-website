@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Pro24 Contracting — Reliable &amp; Experienced Builders | Ham Lake, MN</title>
+  <meta name="description" content="Founded in 2021 by Zach Halvorson, Pro24 Contracting is a tight-knit team of builders in Ham Lake, MN — named for Proverbs 24:3, built on quality, timely work, communication, and longevity.">
+  <meta name="theme-color" content="#0b0d11">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; margin-top: 48px; }
+    .team-card {
+      background: linear-gradient(180deg, var(--bg-3), var(--bg-2));
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      text-align: center;
+      transition: transform 0.3s var(--ease-out), border-color 0.3s, box-shadow 0.3s;
+    }
+    .team-card:hover { transform: translateY(-5px); border-color: rgba(236,27,31,0.5); box-shadow: 0 18px 40px -20px rgba(0,0,0,0.8); }
+    .team-avatar {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: grid; place-items: center;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: #fff;
+      background: linear-gradient(160deg, #2a2f38, #14171d);
+      border: 2px solid rgba(236,27,31,0.55);
+      box-shadow: 0 0 22px -8px var(--red-glow);
+    }
+    .team-card h3 { font-size: 1.02rem; font-weight: 800; }
+    .team-card p { color: var(--red); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; margin-top: 5px; }
+    .verse-block {
+      border-left: 3px solid var(--red);
+      padding: 8px 0 8px 26px;
+      margin-top: 28px;
+      font-size: 1.12rem;
+      font-style: italic;
+      color: #ced4db;
+    }
+    .verse-block cite { display: block; font-style: normal; font-weight: 700; color: var(--red); margin-top: 10px; font-size: 0.82rem; letter-spacing: 0.18em; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="nav-logo" aria-label="Pro24 Contracting — Home">
+        <img src="assets/img/logo-320.png" alt="Pro24 Contracting">
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Our Work</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="tel:6122358696">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          612-235-8696
+        </a>
+      </div>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a class="mm-link" href="index.html">Home</a>
+    <a class="mm-link" href="services.html">Services</a>
+    <a class="mm-link" href="gallery.html">Our Work</a>
+    <a class="mm-link active" href="about.html">About</a>
+    <a class="mm-link" href="contact.html">Contact</a>
+    <div class="mm-call">
+      <a class="btn btn-primary btn-lg" href="tel:6122358696" style="width:100%">Call 612-235-8696</a>
+    </div>
+  </div>
+
+  <!-- ======= PAGE HERO ======= -->
+  <section class="page-hero">
+    <div class="hero-media"><img src="assets/img/pro24-trailer-jobsite.jpg" alt="" aria-hidden="true"></div>
+    <div class="hero-shade"></div>
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> <span class="sep">▸</span> <span>About</span></nav>
+      <h1 class="display"><span class="chrome-text">Reliable &amp; Experienced</span> <span class="red-text">Builders</span></h1>
+      <p class="section-lead">Founded in 2021 by Zach Halvorson and based in Ham Lake, Minnesota — a tight-knit team built on quality, timely work, communication, and longevity.</p>
+    </div>
+  </section>
+
+  <!-- ======= STORY / NAME ======= -->
+  <section class="section grid-bg">
+    <div class="container split">
+      <div class="reveal-l">
+        <span class="eyebrow">Why "Pro24"?</span>
+        <h2 class="display section-title"><span class="chrome-text">A Name With a</span> <span class="red-text">Foundation</span></h2>
+        <p class="section-lead">Our name comes from Proverbs chapter 24 — a reminder of what building really means, and the standard we hold every project to.</p>
+        <div class="verse-block">
+          "A house is built by wisdom and becomes strong through good sense."
+          <cite>Proverbs 24:3</cite>
+        </div>
+        <p style="margin-top:26px;color:var(--ink-dim);">Wise people are builders — they build families, businesses, and communities. That's the kind of company we set out to be: one that treats every roof as part of somebody's home, and every client as a neighbor.</p>
+      </div>
+      <div class="split-media reveal-r">
+        <img src="assets/img/aerial-home-golden-hour.jpg" alt="Completed Pro24 roof replacement at golden hour" loading="lazy">
+        <span class="media-tag">Built to Last</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= STATS ======= -->
+  <section class="stats-band" aria-label="Company statistics">
+    <div class="stat-cell reveal"><div class="stat-num chrome-text">2021</div><div class="stat-label">Year Established</div></div>
+    <div class="stat-cell reveal d1"><div class="stat-num chrome-text" data-count="300" data-suffix="+">0</div><div class="stat-label">Projects Completed</div></div>
+    <div class="stat-cell reveal d2"><div class="stat-num chrome-text" data-count="30" data-suffix="+">0</div><div class="stat-label">Professional Employees</div></div>
+    <div class="stat-cell reveal d3"><div class="stat-num chrome-text" data-count="30" data-suffix="+">0</div><div class="stat-label">Years Combined Experience</div></div>
+  </section>
+
+  <!-- ======= FAMILY / MISSION ======= -->
+  <section class="section">
+    <div class="container split">
+      <div class="split-media reveal-l">
+        <img src="assets/img/full-tearoff-deck-crew.jpg" alt="Pro24 crew working together on a full tear-off" loading="lazy">
+        <span class="media-tag">The Crew</span>
+      </div>
+      <div class="reveal-r">
+        <span class="eyebrow">We Are a Family</span>
+        <h2 class="display section-title"><span class="chrome-text">When You Work With Us,</span> <span class="red-text">You're Family Too</span></h2>
+        <p class="section-lead">We are a tight-knit family made of the best roofers in Ham Lake, dedicated to finding the best solutions for our clients. We love what we do — and we view every day as an opportunity to go above and beyond for the people we serve.</p>
+        <div class="verse-block" style="font-size:1rem;">
+          "We recognize that home construction and repairs are disruptions to our customers' everyday lives, and we do everything we can to make your experience as painless as possible."
+          <cite>Our Mission</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TEAM ======= -->
+  <section class="section section-dark grid-bg">
+    <div class="container">
+      <span class="eyebrow reveal">Meet the Team</span>
+      <h2 class="display section-title reveal"><span class="chrome-text">The People Behind</span> <span class="red-text">the Projects</span></h2>
+      <p class="section-lead reveal">Thirty-plus professionals in the field and in the office — these are the folks leading them.</p>
+      <div class="team-grid">
+        <div class="team-card reveal"><div class="team-avatar">ZH</div><h3>Zach Halvorson</h3><p>Founder</p></div>
+        <div class="team-card reveal d1"><div class="team-avatar">CL</div><h3>Christy Lamoreaux</h3><p>General Manager</p></div>
+        <div class="team-card reveal d2"><div class="team-avatar">OM</div><h3>Onasis Munro</h3><p>Director of Marketing</p></div>
+        <div class="team-card reveal"><div class="team-avatar">SS</div><h3>Shane Svoboda</h3><p>Project Manager</p></div>
+        <div class="team-card reveal d1"><div class="team-avatar">KE</div><h3>Kaden Elvidge</h3><p>Project Manager</p></div>
+        <div class="team-card reveal d2"><div class="team-avatar">EL</div><h3>Eli Loomis</h3><p>Project Manager</p></div>
+        <div class="team-card reveal"><div class="team-avatar">RH</div><h3>Ronin Holley</h3><p>Project Manager</p></div>
+        <div class="team-card reveal d1"><div class="team-avatar">JK</div><h3>Jonn Kerkes</h3><p>Project Manager</p></div>
+        <div class="team-card reveal d2"><div class="team-avatar">MG</div><h3>Matt Grundtner</h3><p>Project Manager</p></div>
+        <div class="team-card reveal"><div class="team-avatar">HM</div><h3>Hoa Mai</h3><p>Sales Manager</p></div>
+        <div class="team-card reveal d1"><div class="team-avatar">DC</div><h3>Dominick Crea</h3><p>Sales Manager</p></div>
+      </div>
+      <p class="reveal" style="margin-top:36px;color:var(--ink-dim);font-size:0.95rem;">Want to build with us? <a href="https://apply.pro24contracting.com/" target="_blank" rel="noopener" style="color:var(--red);font-weight:700;">We're hiring — employees &amp; subcontractors →</a></p>
+    </div>
+  </section>
+
+  <!-- ======= CTA ======= -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <span class="eyebrow" style="justify-content:center;">Ready When You Are</span>
+        <h2 class="display"><span class="chrome-text">Let's Build</span> <span class="red-text">Something Strong.</span></h2>
+        <p>Have a project in mind? Don't hesitate to reach out.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;align-items:center;">
+          <a class="btn btn-primary btn-lg" href="contact.html">Request a Free Consultation</a>
+          <a class="cta-phone" href="tel:6122358696">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            612-235-8696
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo-720.png" alt="Pro24 Contracting" loading="lazy">
+        <p>Reliable &amp; experienced builders you can trust. Roofing, siding, windows, gutters, and storm restoration across Minnesota and western Wisconsin.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#roofing">Roof Repair &amp; Replacement</a></li>
+          <li><a href="services.html#storm">Storm Damage &amp; Insurance</a></li>
+          <li><a href="services.html#siding">Siding</a></li>
+          <li><a href="services.html#windows">Windows</a></li>
+          <li><a href="services.html#gutters">Gutters</a></li>
+          <li><a href="services.html#inspections">Free Inspections</a></li>
+          <li><a href="services.html#commercial">Commercial &amp; Multifamily</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:6122358696">612-235-8696</a></li>
+          <li><a href="mailto:Info@pro24contracting.com">Info@pro24contracting.com</a></li>
+          <li><a href="contact.html">811 Andover Blvd NE<br>Ham Lake, MN 55304</a></li>
+          <li><a href="https://www.facebook.com/Pro24Contracting" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/pro24contracting/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; <span data-year>2026</span> Pro24 Contracting, LLC &middot; Ham Lake, Minnesota</span>
+      <span>Built on Proverbs 24:3</span>
+    </div>
+    <div class="footer-watermark" aria-hidden="true">PRO24</div>
+  </footer>
+
+  <div class="callbar">
+    <a class="cb-call" href="tel:6122358696">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Now
+    </a>
+    <a class="cb-quote" href="contact.html">Free Inspection</a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
