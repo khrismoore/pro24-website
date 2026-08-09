@@ -697,7 +697,9 @@ a.contact-card:hover { border-color: rgba(236,27,31,0.5); transform: translateY(
   display: none;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  transition: transform 0.35s var(--ease-out), opacity 0.3s;
 }
+.callbar.cb-hidden { transform: translateY(140%); opacity: 0; pointer-events: none; }
 .callbar a {
   display: flex; align-items: center; justify-content: center; gap: 9px;
   padding: 15px 10px;
@@ -777,8 +779,8 @@ a.contact-card:hover { border-color: rgba(236,27,31,0.5); transform: translateY(
       radial-gradient(120% 70% at 30% 60%, rgba(8,9,12,0.6) 0%, transparent 75%);
   }
   .callbar { display: grid; left: 14px; right: 14px; bottom: 10px; gap: 8px; }
-  .callbar a { padding: 11px 8px; font-size: 0.76rem; border-radius: 10px; gap: 7px; }
-  .callbar a svg { width: 13px; height: 13px; }
+  .callbar a { padding: 9px 8px; font-size: 0.72rem; border-radius: 9px; gap: 6px; }
+  .callbar a svg { width: 12px; height: 12px; }
   body { padding-bottom: 60px; }
   .hero-badge {
     padding: 7px 13px;
