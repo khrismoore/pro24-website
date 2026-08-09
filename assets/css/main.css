@@ -776,8 +776,18 @@ a.contact-card:hover { border-color: rgba(236,27,31,0.5); transform: translateY(
       linear-gradient(180deg, rgba(8,9,12,0.62) 0%, rgba(8,9,12,0.45) 40%, rgba(11,13,17,0.97) 92%),
       radial-gradient(120% 70% at 30% 60%, rgba(8,9,12,0.6) 0%, transparent 75%);
   }
-  .callbar { display: grid; }
-  body { padding-bottom: 76px; }
+  .callbar { display: grid; left: 14px; right: 14px; bottom: 10px; gap: 8px; }
+  .callbar a { padding: 11px 8px; font-size: 0.76rem; border-radius: 10px; gap: 7px; }
+  .callbar a svg { width: 13px; height: 13px; }
+  body { padding-bottom: 60px; }
+  .hero-badge {
+    padding: 7px 13px;
+    font-size: 0.62rem;
+    letter-spacing: 0.13em;
+    gap: 7px;
+    margin-bottom: 20px;
+  }
+  .pulse-dot { width: 7px; height: 7px; }
   .footer-grid { grid-template-columns: 1fr; gap: 34px; }
   .hero-inner { padding-bottom: 80px; }
   .hero-scrollcue { display: none; }
