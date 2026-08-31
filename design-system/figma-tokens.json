@@ -1,0 +1,103 @@
+{
+  "pro24": {
+    "color": {
+      "bg": {
+        "0": { "value": "#08090c", "type": "color", "description": "Deepest background — page edges, hero shade" },
+        "1": { "value": "#0b0d11", "type": "color", "description": "Body background (default page surface)" },
+        "2": { "value": "#12151b", "type": "color", "description": "Panels / dark sections" },
+        "3": { "value": "#191d25", "type": "color", "description": "Cards / raised surfaces" }
+      },
+      "ink": {
+        "default": { "value": "#eceef1", "type": "color", "description": "Primary text on dark" },
+        "dim": { "value": "#a7afba", "type": "color", "description": "Secondary text / leads" },
+        "faint": { "value": "#6b7480", "type": "color", "description": "Tertiary text / captions / fine print" }
+      },
+      "brand": {
+        "red": { "value": "#ec1b1f", "type": "color", "description": "Pro24 brand red — CTAs, accents, highlighted words" },
+        "redDeep": { "value": "#a90f13", "type": "color", "description": "Pressed / gradient end of brand red" },
+        "redGlow": { "value": "rgba(236,27,31,0.45)", "type": "color", "description": "Glow shadow color behind red CTAs" }
+      },
+      "hairline": {
+        "default": { "value": "rgba(255,255,255,0.08)", "type": "color", "description": "1px borders on cards / dividers" },
+        "strong": { "value": "rgba(255,255,255,0.14)", "type": "color", "description": "Hover-state borders" }
+      },
+      "chrome": {
+        "stop1": { "value": "#f7f9fb", "type": "color", "description": "Chrome gradient 0% — near white" },
+        "stop2": { "value": "#cdd3da", "type": "color", "description": "Chrome gradient 34%" },
+        "stop3": { "value": "#878f99", "type": "color", "description": "Chrome gradient 50% — steel core" },
+        "stop4": { "value": "#e9ecef", "type": "color", "description": "Chrome gradient 62% — highlight band" },
+        "stop5": { "value": "#9aa2ac", "type": "color", "description": "Chrome gradient 100%" }
+      }
+    },
+    "gradient": {
+      "chromeText": {
+        "value": "linear-gradient(180deg, {pro24.color.chrome.stop1} 0%, {pro24.color.chrome.stop2} 34%, {pro24.color.chrome.stop3} 50%, {pro24.color.chrome.stop4} 62%, {pro24.color.chrome.stop5} 100%)",
+        "type": "other",
+        "description": "Metallic chrome fill for display headlines (applied as text fill)"
+      },
+      "ctaRed": {
+        "value": "linear-gradient(180deg, {pro24.color.brand.red} 0%, {pro24.color.brand.redDeep} 100%)",
+        "type": "other",
+        "description": "Primary button fill"
+      }
+    },
+    "font": {
+      "display": { "value": "Anton", "type": "fontFamilies", "description": "Display headlines — always uppercase, weight 400" },
+      "body": { "value": "Montserrat", "type": "fontFamilies", "description": "UI and body — weights 400/500/600/700/800" }
+    },
+    "typography": {
+      "heroTitle": {
+        "value": { "fontFamily": "{pro24.font.display}", "fontWeight": "400", "fontSize": "80", "lineHeight": "104%", "letterSpacing": "1.5%", "textCase": "uppercase" },
+        "type": "typography",
+        "description": "Hero H1 — desktop 80 / mobile 43"
+      },
+      "sectionTitle": {
+        "value": { "fontFamily": "{pro24.font.display}", "fontWeight": "400", "fontSize": "54", "lineHeight": "104%", "letterSpacing": "1.5%", "textCase": "uppercase" },
+        "type": "typography",
+        "description": "Section H2 — desktop 54 / mobile 32"
+      },
+      "eyebrow": {
+        "value": { "fontFamily": "{pro24.font.body}", "fontWeight": "700", "fontSize": "12", "lineHeight": "100%", "letterSpacing": "28%", "textCase": "uppercase" },
+        "type": "typography",
+        "description": "Red section eyebrow with 34px gradient dash on the left"
+      },
+      "body": {
+        "value": { "fontFamily": "{pro24.font.body}", "fontWeight": "400", "fontSize": "16", "lineHeight": "165%" },
+        "type": "typography",
+        "description": "Default body copy"
+      },
+      "lead": {
+        "value": { "fontFamily": "{pro24.font.body}", "fontWeight": "400", "fontSize": "17", "lineHeight": "165%" },
+        "type": "typography",
+        "description": "Section lead paragraph — color ink.dim, max width 640"
+      },
+      "button": {
+        "value": { "fontFamily": "{pro24.font.body}", "fontWeight": "700", "fontSize": "13", "lineHeight": "100%", "letterSpacing": "8%", "textCase": "uppercase" },
+        "type": "typography",
+        "description": "Buttons and small nav labels"
+      }
+    },
+    "radius": {
+      "card": { "value": "14", "type": "borderRadius", "description": "Cards, media, panels (--radius)" },
+      "pill": { "value": "999", "type": "borderRadius", "description": "Badges, sub-nav pills, tags" }
+    },
+    "spacing": {
+      "navHeight": { "value": "76", "type": "sizing" },
+      "containerMax": { "value": "1200", "type": "sizing" },
+      "sectionY": { "value": "110", "type": "spacing", "description": "Vertical rhythm between sections (desktop)" },
+      "cardGap": { "value": "22", "type": "spacing", "description": "Grid gap between cards" }
+    },
+    "effect": {
+      "redGlow": {
+        "value": { "type": "dropShadow", "color": "rgba(236,27,31,0.45)", "x": "0", "y": "8", "blur": "24", "spread": "0" },
+        "type": "boxShadow",
+        "description": "Glow under primary CTAs"
+      },
+      "textShadow": {
+        "value": { "type": "dropShadow", "color": "rgba(0,0,0,0.55)", "x": "0", "y": "2", "blur": "6", "spread": "0" },
+        "type": "boxShadow",
+        "description": "Drop shadow behind chrome headlines"
+      }
+    }
+  }
+}
